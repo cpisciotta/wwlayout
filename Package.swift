@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "WWLayout",
     platforms: [
-        .iOS(.v10),
+        .iOS(.v12),
         .tvOS(.v10)
     ],
     products: [
