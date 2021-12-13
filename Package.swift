@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.5
 
 import PackageDescription
 
@@ -18,9 +18,11 @@ let package = Package(
     targets: [
         .target(
             name: "WWLayout",
-            dependencies: []),
+            dependencies: [],
+            exclude: ["Info.plist"]),
         .testTarget(
             name: "WWLayoutTests",
-            dependencies: ["WWLayout"])
+            dependencies: ["WWLayout"],
+            exclude: ["Info.plist"])
     ]
 )
